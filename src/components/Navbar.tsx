@@ -43,7 +43,8 @@ const Navbar = () => {
       {/* Logo y nombre */}
       <Link to="/" className="flex items-center space-x-2 z-50">
         <img
-          src="/logo-la-granja-de-heidy.png"
+          // Actualizamos la ruta del logo a la imagen subida
+          src="/lovable-uploads/7ef70d47-84b6-4535-8d05-2d6d174e8616.png"
           alt="La Granja De Heidy"
           className="h-9 w-auto"
         />
@@ -194,7 +195,8 @@ const Navbar = () => {
         {/* Logo en menú móvil */}
         <Link to="/" className="flex items-center space-x-2 mb-8" onClick={() => setMobileOpen(false)}>
           <img
-            src="/logo-la-granja-de-heidy.png"
+            // Actualizamos la ruta del logo a la imagen subida
+            src="/lovable-uploads/7ef70d47-84b6-4535-8d05-2d6d174e8616.png"
             alt="La Granja De Heidy"
             className="h-9 w-auto"
           />
@@ -285,3 +287,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
