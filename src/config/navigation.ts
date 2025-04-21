@@ -1,4 +1,3 @@
-
 export const TIENDA_CATEGORIAS = [
   { name: "Vegetales", path: "/tienda/vegetales" },
   { name: "Frutas", path: "/tienda/frutas" },
@@ -12,7 +11,6 @@ export const TIENDA_CATEGORIAS = [
 export const CONOCENOS_SECCIONES = [
   { name: "Nuestra Finca", path: "/conocenos/nuestra-finca" },
   { name: "Nuestro Compromiso", path: "/conocenos/nuestro-compromiso" },
-  { name: "Cómo Hacer un Pedido", path: "/conocenos/como-hacer-un-pedido" },
 ];
 
 export const BLOG_SECCIONES = [

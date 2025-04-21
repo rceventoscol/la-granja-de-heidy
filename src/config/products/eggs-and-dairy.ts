@@ -1,4 +1,3 @@
-
 import { Product } from './types';
 
 export const eggsAndDairy: Product[] = [
@@ -6,7 +5,7 @@ export const eggsAndDairy: Product[] = [
     id: "huevos-1",
     name: "Huevo de codorniz x24",
     price: 0,
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1587486913049-53fc88980cfc",
     category: "Huevos y Lácteos",
     unit: "und"
   },
@@ -14,7 +13,7 @@ export const eggsAndDairy: Product[] = [
     id: "huevos-2",
     name: "Huevo del Campo B X 30 und",
     price: 0,
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0",
     category: "Huevos y Lácteos",
     unit: "und"
   },

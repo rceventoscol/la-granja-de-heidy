@@ -4,8 +4,8 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-1",
     name: "Zanahoria Orgánica",
-    price: 2.99,
-    image: "/placeholder.svg",
+    price: 0,
+    image: "https://images.unsplash.com/photo-1447175008436-054170c2e979",
     category: "Vegetales",
     isOrganic: true,
     unit: "lb"
@@ -13,8 +13,8 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-2",
     name: "Tomate Cherry Orgánico",
-    price: 3.49,
-    image: "/placeholder.svg",
+    price: 0,
+    image: "https://images.unsplash.com/photo-1546470427-f5d8c4adcdf1",
     category: "Vegetales",
     isOrganic: true,
     unit: "lb"
@@ -22,7 +22,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-3",
     name: "Lechuga Romana Orgánica",
-    price: 2.79,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -31,7 +31,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-4",
     name: "Espinaca Orgánica",
-    price: 3.99,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -40,7 +40,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-5",
     name: "Pepino Orgánico",
-    price: 1.99,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -49,7 +49,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-6",
     name: "Pimentón Rojo Orgánico",
-    price: 2.49,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -58,7 +58,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-7",
     name: "Cebolla Blanca Orgánica",
-    price: 1.79,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -67,7 +67,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-8",
     name: "Ajo Orgánico",
-    price: 4.99,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -76,7 +76,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-9",
     name: "Brócoli Orgánico",
-    price: 3.29,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -85,7 +85,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-10",
     name: "Coliflor Orgánica",
-    price: 3.79,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -94,7 +94,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-11",
     name: "Apio Orgánico",
-    price: 2.29,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -103,7 +103,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-12",
     name: "Remolacha Orgánica",
-    price: 2.59,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -112,7 +112,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-13",
     name: "Rábano Orgánico",
-    price: 1.49,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -121,7 +121,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-14",
     name: "Calabacín Orgánico",
-    price: 2.89,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -130,7 +130,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-15",
     name: "Berenjena Orgánica",
-    price: 3.19,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -139,7 +139,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-16",
     name: "Zanahoria Baby Orgánica",
-    price: 3.69,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -148,7 +148,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-17",
     name: "Tomate Chonto Orgánico",
-    price: 2.99,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -157,7 +157,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-18",
     name: "Cilantro Orgánico",
-    price: 1.29,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -166,7 +166,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-19",
     name: "Perejil Orgánico",
-    price: 1.29,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,
@@ -175,7 +175,7 @@ export const vegetables: Product[] = [
   {
     id: "vegetales-20",
     name: "Espinaca Baby Orgánica",
-    price: 4.29,
+    price: 0,
     image: "/placeholder.svg",
     category: "Vegetales",
     isOrganic: true,

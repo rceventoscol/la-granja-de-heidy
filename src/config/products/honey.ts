@@ -5,7 +5,7 @@ export const honey: Product[] = [
     id: "miel-1",
     name: "Miel Pura",
     price: 0,
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38",
     category: "Miel y Polen",
     isOrganic: true,
     unit: "gr"
@@ -14,7 +14,7 @@ export const honey: Product[] = [
     id: "miel-2",
     name: "Miel con Polen",
     price: 0,
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1585849834908-3481231155e8",
     category: "Miel y Polen",
     isOrganic: true,
     unit: "gr"

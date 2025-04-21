@@ -4,8 +4,8 @@ export const beverages: Product[] = [
   {
     id: "bebidas-1",
     name: "Jugo Natural",
-    price: 4.99,
-    image: "/placeholder.svg",
+    price: 0,
+    image: "https://images.unsplash.com/photo-1622597467836-f3285f2131b7",
     category: "Bebidas",
     isOrganic: true,
     unit: "l"
@@ -13,8 +13,8 @@ export const beverages: Product[] = [
   {
     id: "bebidas-2",
     name: "Limonada",
-    price: 3.50,
-    image: "/placeholder.svg",
+    price: 0,
+    image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859",
     category: "Bebidas",
     isOrganic: true,
     unit: "l"
@@ -22,7 +22,7 @@ export const beverages: Product[] = [
   {
     id: "bebidas-3",
     name: "Naranjada",
-    price: 3.50,
+    price: 0,
     image: "/placeholder.svg",
     category: "Bebidas",
     isOrganic: true,
@@ -31,7 +31,7 @@ export const beverages: Product[] = [
   {
     id: "bebidas-4",
     name: "Agua",
-    price: 2.00,
+    price: 0,
     image: "/placeholder.svg",
     category: "Bebidas",
     isOrganic: true,
@@ -40,7 +40,7 @@ export const beverages: Product[] = [
   {
     id: "bebidas-5",
     name: "Gaseosa",
-    price: 2.50,
+    price: 0,
     image: "/placeholder.svg",
     category: "Bebidas",
     isOrganic: false,
@@ -49,7 +49,7 @@ export const beverages: Product[] = [
   {
     id: "bebidas-6",
     name: "Té frío",
-    price: 3.00,
+    price: 0,
     image: "/placeholder.svg",
     category: "Bebidas",
     isOrganic: true,
