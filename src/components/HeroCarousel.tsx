@@ -6,18 +6,18 @@ import { Button } from '@/components/ui/button';
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1506484381205-f7945653044d?auto=format&fit=crop&q=80&w=2400",
-    title: "Productos orgánicos frescos",
-    description: "De nuestra finca a tu mesa, cultivados con amor y respeto por la naturaleza.",
+    image: "/lovable-uploads/a0c333f1-d2bd-4a9a-ad80-e1281bf5b1f5.png",
+    title: "Del campo 100% Natural",
+    description: "Productos frescos directamente desde nuestra tienda local, cultivados con amor y respeto.",
     cta: "Explorar tienda",
     link: "/tienda"
   },
   {
-    image: "https://images.unsplash.com/photo-1470091688026-38b52e3855a9?auto=format&fit=crop&q=80&w=2400",
-    title: "Frutas de temporada",
-    description: "Frutas deliciosas y nutritivas, cosechadas en su punto óptimo de maduración.",
-    cta: "Ver frutas",
-    link: "/tienda/frutas-tropicales"
+    image: "/lovable-uploads/97e369c4-ac63-4845-8fa8-aa5779a9c317.png",
+    title: "Verduras frescas de temporada",
+    description: "Pimientos verdes y otros vegetales cultivados con las mejores prácticas agrícolas.",
+    cta: "Ver productos",
+    link: "/tienda/vegetales"
   },
   {
     image: "https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&q=80&w=2400",
