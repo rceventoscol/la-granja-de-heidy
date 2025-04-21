@@ -7,20 +7,13 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const storeCategories = [
-  { name: "Nuevos Productos", href: "/tienda/nuevos" },
-  { name: "Raíces y Tubérculos", href: "/tienda/raices" },
-  { name: "Bulbos y Tallos", href: "/tienda/bulbos" },
-  { name: "Vegetales de Fruto", href: "/tienda/vegetales" },
-  { name: "Hojas y Lechugas", href: "/tienda/hojas" },
+  { name: "Vegetales", href: "/tienda/vegetales" },
+  { name: "Frutas", href: "/tienda/frutas" },
   { name: "Hierbas", href: "/tienda/hierbas" },
-  { name: "Frutas Tropicales", href: "/tienda/frutas-tropicales" },
-  { name: "Frutas de Montaña", href: "/tienda/frutas-montania" },
   { name: "Huevos y Lácteos", href: "/tienda/huevos-lacteos" },
-  { name: "Transformados", href: "/tienda/transformados" },
-  { name: "Bebidas", href: "/tienda/bebidas" },
   { name: "Despensa y Abarrotes", href: "/tienda/despensa" },
-  { name: "Estilo de Vida", href: "/tienda/estilo-vida" },
-  { name: "Cajas y Suscripciones", href: "/tienda/cajas-suscripciones" },
+  { name: "Carnes", href: "/tienda/carnes" },
+  { name: "Abono Orgánico", href: "/tienda/abono-organico" },
 ];
 
 const aboutUsLinks = [
@@ -196,3 +189,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
