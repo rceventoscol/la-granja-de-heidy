@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
@@ -33,7 +32,6 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
-  // Para saber si un grupo de paths (por módulo) está activo
   const isPathActive = (paths: string[]) => {
     return paths.some((p) => location.pathname.startsWith(p));
   };
@@ -43,10 +41,9 @@ const Navbar = () => {
       {/* Logo y nombre */}
       <Link to="/" className="flex items-center space-x-2 z-50">
         <img
-          // Actualizamos la ruta del logo a la imagen subida
           src="/lovable-uploads/7ef70d47-84b6-4535-8d05-2d6d174e8616.png"
           alt="La Granja De Heidy"
-          className="h-9 w-auto"
+          className="h-18 w-auto"
         />
         <span className="font-montserrat font-bold text-2xl text-organic-green">
           La Granja De Heidy
@@ -195,10 +192,9 @@ const Navbar = () => {
         {/* Logo en menú móvil */}
         <Link to="/" className="flex items-center space-x-2 mb-8" onClick={() => setMobileOpen(false)}>
           <img
-            // Actualizamos la ruta del logo a la imagen subida
             src="/lovable-uploads/7ef70d47-84b6-4535-8d05-2d6d174e8616.png"
             alt="La Granja De Heidy"
-            className="h-9 w-auto"
+            className="h-18 w-auto"
           />
           <span className="font-montserrat font-bold text-2xl text-organic-green">
             La Granja De Heidy
@@ -287,4 +283,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
