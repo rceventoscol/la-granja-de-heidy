@@ -43,7 +43,7 @@ const Navbar = () => {
         <img
           src="/lovable-uploads/7ef70d47-84b6-4535-8d05-2d6d174e8616.png"
           alt="La Granja De Heidy"
-          className="h-18 w-auto"
+          className="h-12 w-auto"
         />
         <span className="font-montserrat font-bold text-2xl text-organic-green">
           La Granja De Heidy
@@ -194,12 +194,13 @@ const Navbar = () => {
           <img
             src="/lovable-uploads/7ef70d47-84b6-4535-8d05-2d6d174e8616.png"
             alt="La Granja De Heidy"
-            className="h-18 w-auto"
+            className="h-12 w-auto"
           />
           <span className="font-montserrat font-bold text-2xl text-organic-green">
             La Granja De Heidy
           </span>
         </Link>
+
         {/* Módulos y subcategorías mobile */}
         <div className="flex flex-col space-y-6">
           <div>
