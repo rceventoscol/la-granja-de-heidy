@@ -33,14 +33,16 @@ const TiendaPage = () => {
       return;
     }
 
-    // Filtrar productos por categoría
-    const filteredProducts = PRODUCTS.filter(p => {
-      const categoryMatch = p.category.toLowerCase() === normalizedCategoria.toLowerCase();
-      return categoryMatch;
-    });
+    // Determinar el nombre de categoría exacto basado en la configuración
+    const exactCategoryName = categoryExists.name;
 
+    // Filtrar productos por categoría
+    const filteredProducts = PRODUCTS.filter(p => p.category === exactCategoryName);
+    
+    console.log(`Category: ${exactCategoryName}, Found products: ${filteredProducts.length}`);
+    
     setProducts(filteredProducts);
-    setCategoryName(categoryExists.name);
+    setCategoryName(exactCategoryName);
   }, [categoria, navigate]);
 
   return (
