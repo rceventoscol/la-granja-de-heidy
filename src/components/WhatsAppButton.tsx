@@ -1,10 +1,9 @@
 
 import { useState } from 'react';
-import { Whatsapp, X } from 'lucide-react';
+import { MessageCircle, X } from 'lucide-react';
 
-const WhatsAppButton = () => {
+const MessageButton = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = '1234567890'; // Cambia esto por el número real
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
@@ -15,34 +14,29 @@ const WhatsAppButton = () => {
             <button 
               onClick={() => setIsOpen(false)}
               className="text-gray-500 hover:text-gray-700"
+              aria-label="Cerrar diálogo de ayuda"
             >
               <X className="h-5 w-5" />
             </button>
           </div>
           <p className="text-sm mb-4">
-            Contáctanos por WhatsApp para recibir atención personalizada sobre nuestros productos orgánicos.
+            Contáctanos para recibir atención personalizada sobre nuestros productos orgánicos.
           </p>
-          <a 
-            href={`https://wa.me/${phoneNumber}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-organic-green text-black w-full py-2 rounded-md flex items-center justify-center font-medium hover:bg-organic-green/80 transition-colors"
-          >
-            Iniciar chat
-          </a>
+          {/* Aquí podrías agregar más contenido o un link de contacto */}
         </div>
       )}
       
       <button
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Cerrar ayuda" : "Abrir ayuda"}
         className={`rounded-full p-3.5 shadow-lg flex items-center justify-center ${
           isOpen ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
         }`}
       >
-        {isOpen ? <X className="h-6 w-6" /> : <Whatsapp className="h-6 w-6" />}
+        {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
       </button>
     </div>
   );
 };
 
-export default WhatsAppButton;
+export default MessageButton;
