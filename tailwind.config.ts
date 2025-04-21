@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Colores personalizados para la tienda orgánica
 				organic: {
 					green: '#A8D5BA',
 					beige: '#F5F5DC',
