@@ -1,11 +1,12 @@
-
 export const TIENDA_CATEGORIAS = [
   { name: "Vegetales", path: "/tienda/vegetales" },
   { name: "Frutas", path: "/tienda/frutas" },
   { name: "Hierbas", path: "/tienda/hierbas" },
   { name: "Huevos y Lácteos", path: "/tienda/huevos-y-lacteos" },
-  { name: "Despensa y Abarrotes", path: "/tienda/despensa-y-abarrotes" },
+  { name: "Carnes", path: "/tienda/carnes" },
   { name: "Bebidas", path: "/tienda/bebidas" },
+  { name: "Miel y Polen", path: "/tienda/miel-y-polen" },
+  { name: "Abono", path: "/tienda/abono" },
 ];
 
 export const CONOCENOS_SECCIONES = [
