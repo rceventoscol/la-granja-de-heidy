@@ -6,10 +6,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import { useEffect } from "react";
 import TiendaPage from "./components/TiendaPage";
+import NuestraFinca from "./pages/NuestraFinca";
+import NuestroCompromiso from "./pages/NuestroCompromiso";
 
-// Inicializamos el cliente de React Query
+// Initialize React Query client
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -33,14 +34,15 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            
             {/* Tienda y subcategorías */}
             <Route path="/tienda" element={<TiendaPage />} />
             <Route path="/tienda/:categoria" element={<TiendaPage />} />
             <Route path="/producto/:id" element={<Index />} />
             
             {/* Conócenos */}
-            <Route path="/conocenos" element={<Index />} />
-            <Route path="/conocenos/:seccion" element={<Index />} />
+            <Route path="/conocenos/nuestra-finca" element={<NuestraFinca />} />
+            <Route path="/conocenos/nuestro-compromiso" element={<NuestroCompromiso />} />
             
             {/* Blog */}
             <Route path="/blog" element={<Index />} />
