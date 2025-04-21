@@ -39,8 +39,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Leaf className="h-8 w-8 text-organic-green" />
-            <span className="font-montserrat font-bold text-2xl">EcoFresh</span>
+            <img src="/logo-la-granja-de-heidy.png" alt="La Granja De Heidy" className="h-8 w-auto" />
+            <span className="font-montserrat font-bold text-2xl">La Granja De Heidy</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -159,7 +159,7 @@ const Navbar = () => {
                           className="text-muted-foreground hover:text-organic-green transition-colors"
                         >
                           {link.name}
-                        </Link>
+                      </Link>
                       ))}
                     </div>
                   </div>
@@ -189,4 +189,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

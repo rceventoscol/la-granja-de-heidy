@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { Whatsapp, X } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +39,7 @@ const WhatsAppButton = () => {
           isOpen ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
         }`}
       >
-        {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
+        {isOpen ? <X className="h-6 w-6" /> : <Whatsapp className="h-6 w-6" />}
       </button>
     </div>
   );
