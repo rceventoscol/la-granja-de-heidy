@@ -11,9 +11,10 @@ interface ProductCardProps {
   category: string;
   isNew?: boolean;
   isOrganic?: boolean;
+  unit?: string;
 }
 
-const ProductCard = ({ id, name, price, image, category, isNew = false, isOrganic = true }: ProductCardProps) => {
+const ProductCard = ({ id, name, price, image, category, isNew = false, isOrganic = true, unit = 'lb' }: ProductCardProps) => {
   return (
     <div className="card-organic group">
       <Link to={`/producto/${id}`} className="block relative overflow-hidden">
@@ -50,7 +51,7 @@ const ProductCard = ({ id, name, price, image, category, isNew = false, isOrgani
         
         <div className="flex justify-between items-center mt-3">
           <span className="font-montserrat font-semibold text-lg">
-            {price > 0 ? `$${price.toFixed(2)}` : 'Consultar precio'}
+            {price > 0 ? `$${price.toFixed(2)} ${unit ? `/ ${unit}` : ''}` : 'Consultar precio'}
           </span>
           <Button variant="outline" size="icon" className="h-9 w-9 rounded-full hover:bg-organic-green hover:text-black">
             <ShoppingCart className="h-5 w-5" />
