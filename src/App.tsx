@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
+import TiendaPage from "./components/TiendaPage";
 
 // Inicializamos el cliente de React Query
 const queryClient = new QueryClient();
@@ -33,8 +34,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             {/* Tienda y subcategorías */}
-            <Route path="/tienda" element={<Index />} />
-            <Route path="/tienda/:categoria" element={<Index />} />
+            <Route path="/tienda" element={<TiendaPage />} />
+            <Route path="/tienda/:categoria" element={<TiendaPage />} />
             <Route path="/producto/:id" element={<Index />} />
             
             {/* Conócenos */}

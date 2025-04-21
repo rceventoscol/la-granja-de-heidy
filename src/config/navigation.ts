@@ -1,7 +1,7 @@
+
 export const TIENDA_CATEGORIAS = [
   { name: "Vegetales", path: "/tienda/vegetales" },
   { name: "Frutas", path: "/tienda/frutas" },
-  { name: "Hierbas", path: "/tienda/hierbas" },
   { name: "Huevos y Lácteos", path: "/tienda/huevos-y-lacteos" },
   { name: "Carnes", path: "/tienda/carnes" },
   { name: "Bebidas", path: "/tienda/bebidas" },
