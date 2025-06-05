@@ -10,9 +10,6 @@ import NotFound from "./pages/NotFound";
 import TiendaPage from "./components/TiendaPage";
 import NuestraFinca from "./pages/NuestraFinca";
 import NuestroCompromiso from "./pages/NuestroCompromiso";
-import RecetasVegetales from "./pages/blog/RecetasVegetales";
-import BeneficiosOrganicos from "./pages/blog/BeneficiosOrganicos";
-import DiaEnLaFinca from "./pages/blog/DiaEnLaFinca";
 
 // Initialize React Query client
 const queryClient = new QueryClient();
@@ -50,9 +47,7 @@ const App = () => {
             
             {/* Blog */}
             <Route path="/blog" element={<Index />} />
-            <Route path="/blog/1" element={<RecetasVegetales />} />
-            <Route path="/blog/2" element={<BeneficiosOrganicos />} />
-            <Route path="/blog/3" element={<DiaEnLaFinca />} />
+            <Route path="/blog/:id" element={<Index />} />
             
             {/* Página 404 */}
             <Route path="*" element={<NotFound />} />
