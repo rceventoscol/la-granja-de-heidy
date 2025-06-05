@@ -51,7 +51,7 @@ const blogPosts = [{
   id: "2",
   title: "Beneficios de los alimentos orgánicos",
   excerpt: "Descubre por qué los alimentos orgánicos son mejores para tu salud y para el medio ambiente.",
-  image: "https://images.unsplash.com/photo-1550828486-68df10636633?auto=format&fit=crop&q=80&w=1400",
+  image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&q=80&w=1400",
   date: "2 de abril, 2025",
   category: "Salud"
 }, {
@@ -62,6 +62,7 @@ const blogPosts = [{
   date: "28 de marzo, 2025",
   category: "Nuestra Finca"
 }];
+
 const Index = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
