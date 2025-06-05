@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Leaf, Award, TrendingUp, Truck } from "lucide-react";
@@ -45,14 +44,14 @@ const blogPosts = [{
   id: "1",
   title: "5 recetas con vegetales de temporada",
   excerpt: "Aprovecha al máximo los vegetales frescos con estas deliciosas recetas fáciles de preparar.",
-  image: "/lovable-uploads/67bddb80-6b41-4e81-a6c2-22f940d63076.png",
+  image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=1400",
   date: "15 de abril, 2025",
   category: "Recetas"
 }, {
   id: "2",
   title: "Beneficios de los alimentos orgánicos",
   excerpt: "Descubre por qué los alimentos orgánicos son mejores para tu salud y para el medio ambiente.",
-  image: "/lovable-uploads/50cf49f3-cd22-4257-95d0-e4e9ef2033a2.png",
+  image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&q=80&w=1400",
   date: "2 de abril, 2025",
   category: "Salud"
 }, {
