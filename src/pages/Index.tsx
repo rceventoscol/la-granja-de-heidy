@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Leaf, Award, TrendingUp, Truck } from "lucide-react";
@@ -10,72 +9,61 @@ import ProductCard from "@/components/ProductCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Datos de ejemplo para productos destacados
-const featuredProducts = [
-  {
-    id: "1",
-    name: "Zanahorias orgánicas",
-    price: 3.99,
-    image: "https://images.unsplash.com/photo-1447175008436-054170c2e979?auto=format&fit=crop&q=80&w=1400",
-    category: "Raíces y Tubérculos",
-    isNew: true,
-  },
-  {
-    id: "2",
-    name: "Lechugas frescas",
-    price: 2.49,
-    image: "https://images.unsplash.com/photo-1622206151242-c23286977150?auto=format&fit=crop&q=80&w=1400",
-    category: "Hojas y Lechugas",
-    isOrganic: true,
-  },
-  {
-    id: "3",
-    name: "Naranjas de montaña",
-    price: 4.99,
-    image: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&q=80&w=1400",
-    category: "Frutas de Montaña",
-    isNew: true,
-  },
-  {
-    id: "4",
-    name: "Aguacate Hass",
-    price: 5.99,
-    image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&q=80&w=1400",
-    category: "Vegetales de Fruto",
-    isOrganic: true,
-  }
-];
+const featuredProducts = [{
+  id: "1",
+  name: "Zanahorias orgánicas",
+  price: 3.99,
+  image: "https://images.unsplash.com/photo-1447175008436-054170c2e979?auto=format&fit=crop&q=80&w=1400",
+  category: "Raíces y Tubérculos",
+  isNew: true
+}, {
+  id: "2",
+  name: "Lechugas frescas",
+  price: 2.49,
+  image: "https://images.unsplash.com/photo-1622206151242-c23286977150?auto=format&fit=crop&q=80&w=1400",
+  category: "Hojas y Lechugas",
+  isOrganic: true
+}, {
+  id: "3",
+  name: "Naranjas de montaña",
+  price: 4.99,
+  image: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&q=80&w=1400",
+  category: "Frutas de Montaña",
+  isNew: true
+}, {
+  id: "4",
+  name: "Aguacate Hass",
+  price: 5.99,
+  image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&q=80&w=1400",
+  category: "Vegetales de Fruto",
+  isOrganic: true
+}];
 
 // Datos de ejemplo para blog posts
-const blogPosts = [
-  {
-    id: "1",
-    title: "5 recetas con vegetales de temporada",
-    excerpt: "Aprovecha al máximo los vegetales frescos con estas deliciosas recetas fáciles de preparar.",
-    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=1400",
-    date: "15 de abril, 2025",
-    category: "Recetas",
-  },
-  {
-    id: "2",
-    title: "Beneficios de los alimentos orgánicos",
-    excerpt: "Descubre por qué los alimentos orgánicos son mejores para tu salud y para el medio ambiente.",
-    image: "https://images.unsplash.com/photo-1550828486-68df10636633?auto=format&fit=crop&q=80&w=1400",
-    date: "2 de abril, 2025",
-    category: "Salud",
-  },
-  {
-    id: "3",
-    title: "Un día en nuestra finca",
-    excerpt: "Te mostramos cómo es el día a día en nuestra finca y cómo cuidamos cada detalle de nuestros cultivos.",
-    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&q=80&w=1400",
-    date: "28 de marzo, 2025",
-    category: "Nuestra Finca",
-  },
-];
-
+const blogPosts = [{
+  id: "1",
+  title: "5 recetas con vegetales de temporada",
+  excerpt: "Aprovecha al máximo los vegetales frescos con estas deliciosas recetas fáciles de preparar.",
+  image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=1400",
+  date: "15 de abril, 2025",
+  category: "Recetas"
+}, {
+  id: "2",
+  title: "Beneficios de los alimentos orgánicos",
+  excerpt: "Descubre por qué los alimentos orgánicos son mejores para tu salud y para el medio ambiente.",
+  image: "https://images.unsplash.com/photo-1550828486-68df10636633?auto=format&fit=crop&q=80&w=1400",
+  date: "2 de abril, 2025",
+  category: "Salud"
+}, {
+  id: "3",
+  title: "Un día en nuestra finca",
+  excerpt: "Te mostramos cómo es el día a día en nuestra finca y cómo cuidamos cada detalle de nuestros cultivos.",
+  image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&q=80&w=1400",
+  date: "28 de marzo, 2025",
+  category: "Nuestra Finca"
+}];
 const Index = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-grow">
@@ -138,33 +126,7 @@ const Index = () => {
         </section>
         
         {/* Featured Products */}
-        <section className="py-16">
-          <div className="container-organic">
-            <div className="flex justify-between items-center mb-10">
-              <h2 className="font-montserrat font-bold text-3xl">Productos Destacados</h2>
-              <Link to="/tienda">
-                <Button variant="outline" className="border-organic-green text-organic-green hover:bg-organic-green hover:text-white">
-                  Ver todos
-                </Button>
-              </Link>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {featuredProducts.map(product => (
-                <ProductCard
-                  key={product.id}
-                  id={product.id}
-                  name={product.name}
-                  price={product.price}
-                  image={product.image}
-                  category={product.category}
-                  isNew={product.isNew}
-                  isOrganic={product.isOrganic}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        
         
         {/* Banner */}
         <section className="py-24 bg-organic-green/10 relative overflow-hidden">
@@ -185,11 +147,7 @@ const Index = () => {
             </div>
           </div>
           <div className="absolute inset-0 opacity-20">
-            <img 
-              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&q=80&w=2400"
-              alt="Vegetales orgánicos" 
-              className="object-cover w-full h-full"
-            />
+            <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&q=80&w=2400" alt="Vegetales orgánicos" className="object-cover w-full h-full" />
           </div>
         </section>
         
@@ -206,15 +164,10 @@ const Index = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {blogPosts.map(post => (
-                <Link to={`/blog/${post.id}`} key={post.id} className="group">
+              {blogPosts.map(post => <Link to={`/blog/${post.id}`} key={post.id} className="group">
                   <div className="card-organic h-full flex flex-col">
                     <div className="relative aspect-video overflow-hidden">
-                      <img 
-                        src={post.image} 
-                        alt={post.title} 
-                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                      />
+                      <img src={post.image} alt={post.title} className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
                       <div className="absolute top-3 left-3">
                         <span className="bg-organic-green text-black text-xs px-2 py-1 rounded font-montserrat">
                           {post.category}
@@ -233,8 +186,7 @@ const Index = () => {
                       </span>
                     </div>
                   </div>
-                </Link>
-              ))}
+                </Link>)}
             </div>
           </div>
         </section>
@@ -262,8 +214,6 @@ const Index = () => {
       
       <Footer />
       <WhatsAppButton />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
