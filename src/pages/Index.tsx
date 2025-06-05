@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Leaf, Award, TrendingUp, Truck } from "lucide-react";
@@ -166,7 +165,13 @@ const Index = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {blogPosts.map(post => <Link to={`/blog/${post.id}`} key={post.id} className="group">
+              {blogPosts.map(post => <Link 
+                  to={`/blog/${post.id}`} 
+                  key={post.id} 
+                  className="group"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <div className="card-organic h-full flex flex-col">
                     <div className="relative aspect-video overflow-hidden">
                       <img src={post.image} alt={post.title} className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
