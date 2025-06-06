@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -7,9 +6,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import TiendaPage from "./components/TiendaPage";
 import NuestraFinca from "./pages/NuestraFinca";
 import NuestroCompromiso from "./pages/NuestroCompromiso";
+import RecetasVegetales from "./pages/blog/RecetasVegetales";
+import BeneficiosOrganicos from "./pages/blog/BeneficiosOrganicos";
+import DiaEnLaFinca from "./pages/blog/DiaEnLaFinca";
 
 // Initialize React Query client
 const queryClient = new QueryClient();
@@ -36,16 +37,16 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             
-            {/* Tienda y subcategorías */}
-            <Route path="/tienda" element={<TiendaPage />} />
-            <Route path="/tienda/:categoria" element={<TiendaPage />} />
-            <Route path="/producto/:id" element={<Index />} />
-            
             {/* Conócenos */}
             <Route path="/conocenos/nuestra-finca" element={<NuestraFinca />} />
             <Route path="/conocenos/nuestro-compromiso" element={<NuestroCompromiso />} />
             
-            {/* Blog */}
+            {/* Blog - páginas individuales */}
+            <Route path="/blog/recetas-vegetales" element={<RecetasVegetales />} />
+            <Route path="/blog/beneficios-organicos" element={<BeneficiosOrganicos />} />
+            <Route path="/blog/dia-en-la-finca" element={<DiaEnLaFinca />} />
+            
+            {/* Blog general */}
             <Route path="/blog" element={<Index />} />
             <Route path="/blog/:id" element={<Index />} />
             

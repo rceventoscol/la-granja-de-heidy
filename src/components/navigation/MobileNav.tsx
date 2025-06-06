@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { TIENDA_CATEGORIAS, CONOCENOS_SECCIONES, BLOG_SECCIONES } from "@/config/navigation";
+import { CONOCENOS_SECCIONES, BLOG_SECCIONES, CATALOGO_URL } from "@/config/navigation";
 import { useNavActive } from "@/hooks/use-nav-active";
 import { Logo } from "./Logo";
 
@@ -24,26 +24,17 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
 
         <div className="flex flex-col space-y-6 mt-8">
           <div>
-            <span className="font-montserrat font-semibold text-organic-green flex items-center mb-1">
-              🛒 Tienda
-            </span>
-            <div className="flex flex-col pl-2">
-              {TIENDA_CATEGORIAS.map((cat) => (
-                <Link
-                  to={cat.path}
-                  key={cat.name}
-                  className={`py-2 block font-montserrat text-base ${
-                    location.pathname.startsWith(cat.path)
-                      ? "text-organic-green font-semibold"
-                      : "text-gray-700"
-                  }`}
-                  onClick={onClose}
-                >
-                  {cat.name}
-                </Link>
-              ))}
-            </div>
+            <a
+              href={CATALOGO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-montserrat font-semibold text-organic-green flex items-center mb-4"
+              onClick={onClose}
+            >
+              📄 Catálogo
+            </a>
           </div>
+
           <div>
             <span className="font-montserrat font-semibold text-organic-green flex items-center mb-1">
               🌿 Conócenos
@@ -65,6 +56,7 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
               ))}
             </div>
           </div>
+
           <div>
             <span className="font-montserrat font-semibold text-organic-green flex items-center mb-1">
               📝 Blog

@@ -1,12 +1,5 @@
-export const TIENDA_CATEGORIAS = [
-  { name: "Vegetales", path: "/tienda/vegetales" },
-  { name: "Frutas", path: "/tienda/frutas" },
-  { name: "Huevos y Lácteos", path: "/tienda/huevos-y-lacteos" },
-  { name: "Carnes", path: "/tienda/carnes" },
-  { name: "Bebidas", path: "/tienda/bebidas" },
-  { name: "Miel y Polen", path: "/tienda/miel-y-polen" },
-  { name: "Abono", path: "/tienda/abono" },
-];
+
+export const CATALOGO_URL = "#"; // Aquí irá el enlace al PDF cuando lo tengas
 
 export const CONOCENOS_SECCIONES = [
   { name: "Nuestra Finca", path: "/conocenos/nuestra-finca" },

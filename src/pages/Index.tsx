@@ -151,29 +151,77 @@ const Index = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {blogPosts.map(post => <Link to={`/blog/${post.id}`} key={post.id} className="group">
-                  <div className="card-organic h-full flex flex-col">
-                    <div className="relative aspect-video overflow-hidden">
-                      <img src={post.image} alt={post.title} className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
-                      <div className="absolute top-3 left-3">
-                        <span className="bg-organic-green text-black text-xs px-2 py-1 rounded font-montserrat">
-                          {post.category}
-                        </span>
-                      </div>
-                    </div>
-                    
-                    <div className="p-6 flex flex-col flex-grow">
-                      <span className="text-sm text-gray-500 mb-2">{post.date}</span>
-                      <h3 className="font-montserrat font-semibold text-xl mb-3 group-hover:text-organic-green transition-colors">
-                        {post.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 flex-grow">{post.excerpt}</p>
-                      <span className="font-montserrat text-organic-green font-medium inline-flex items-center group-hover:underline">
-                        Leer más
+              <a href="/blog/recetas-vegetales" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="card-organic h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=1400" alt="5 recetas con vegetales de temporada" className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
+                    <div className="absolute top-3 left-3">
+                      <span className="bg-organic-green text-black text-xs px-2 py-1 rounded font-montserrat">
+                        Recetas
                       </span>
                     </div>
                   </div>
-                </Link>)}
+                  
+                  <div className="p-6 flex flex-col flex-grow">
+                    <span className="text-sm text-gray-500 mb-2">15 de abril, 2025</span>
+                    <h3 className="font-montserrat font-semibold text-xl mb-3 group-hover:text-organic-green transition-colors">
+                      5 recetas con vegetales de temporada
+                    </h3>
+                    <p className="text-gray-600 mb-4 flex-grow">Aprovecha al máximo los vegetales frescos con estas deliciosas recetas fáciles de preparar.</p>
+                    <span className="font-montserrat text-organic-green font-medium inline-flex items-center group-hover:underline">
+                      Leer más
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/blog/beneficios-organicos" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="card-organic h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1400" alt="Beneficios de los alimentos orgánicos" className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
+                    <div className="absolute top-3 left-3">
+                      <span className="bg-organic-green text-black text-xs px-2 py-1 rounded font-montserrat">
+                        Salud
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="p-6 flex flex-col flex-grow">
+                    <span className="text-sm text-gray-500 mb-2">2 de abril, 2025</span>
+                    <h3 className="font-montserrat font-semibold text-xl mb-3 group-hover:text-organic-green transition-colors">
+                      Beneficios de los alimentos orgánicos
+                    </h3>
+                    <p className="text-gray-600 mb-4 flex-grow">Descubre por qué los alimentos orgánicos son mejores para tu salud y para el medio ambiente.</p>
+                    <span className="font-montserrat text-organic-green font-medium inline-flex items-center group-hover:underline">
+                      Leer más
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/blog/dia-en-la-finca" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="card-organic h-full flex flex-col">
+                  <div className="relative aspect-video overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&q=80&w=1400" alt="Un día en nuestra finca" className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
+                    <div className="absolute top-3 left-3">
+                      <span className="bg-organic-green text-black text-xs px-2 py-1 rounded font-montserrat">
+                        Nuestra Finca
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div className="p-6 flex flex-col flex-grow">
+                    <span className="text-sm text-gray-500 mb-2">28 de marzo, 2025</span>
+                    <h3 className="font-montserrat font-semibold text-xl mb-3 group-hover:text-organic-green transition-colors">
+                      Un día en nuestra finca
+                    </h3>
+                    <p className="text-gray-600 mb-4 flex-grow">Te mostramos cómo es el día a día en nuestra finca y cómo cuidamos cada detalle de nuestros cultivos.</p>
+                    <span className="font-montserrat text-organic-green font-medium inline-flex items-center group-hover:underline">
+                      Leer más
+                    </span>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
@@ -189,7 +237,7 @@ const Index = () => {
                 Te invitamos a conocer más sobre nuestros métodos de cultivo, nuestro compromiso con el
                 medio ambiente y cómo llevamos la sostenibilidad a cada rincón de nuestra finca.
               </p>
-              <Link to="/conocenos/finca">
+              <Link to="/conocenos/nuestra-finca">
                 <Button className="bg-organic-green text-black hover:bg-organic-green/80">
                   Visitar nuestra finca
                 </Button>
