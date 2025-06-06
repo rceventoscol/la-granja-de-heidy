@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Leaf, Award, TrendingUp, Truck } from "lucide-react";
@@ -63,7 +62,6 @@ const blogPosts = [{
   date: "28 de marzo, 2025",
   category: "Nuestra Finca"
 }];
-
 const Index = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -133,20 +131,7 @@ const Index = () => {
         {/* Banner */}
         <section className="py-24 bg-organic-green/10 relative overflow-hidden">
           <div className="container-organic relative z-10">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-montserrat font-bold text-3xl md:text-4xl mb-4">
-                Suscríbete a nuestras cajas semanales
-              </h2>
-              <p className="font-lora text-lg mb-8">
-                Recibe semanalmente una selección de nuestros mejores productos 
-                orgánicos directamente en tu puerta.
-              </p>
-              <Link to="/tienda/cajas-suscripciones">
-                <Button className="bg-organic-brown text-white hover:bg-organic-brown/80">
-                  Ver opciones de suscripción
-                </Button>
-              </Link>
-            </div>
+            
           </div>
           <div className="absolute inset-0 opacity-20">
             <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&q=80&w=2400" alt="Vegetales orgánicos" className="object-cover w-full h-full" />
