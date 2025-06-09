@@ -1,4 +1,5 @@
 
+
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
@@ -8,9 +9,9 @@ const WhatsAppButton = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex items-center space-x-3">
-      {/* Texto "Pide ya" */}
-      <div className="bg-organic-green text-black px-3 py-2 rounded-lg shadow-lg font-montserrat font-semibold text-sm animate-pulse">
-        Pide ya
+      {/* Texto "Pide aquí" */}
+      <div className="bg-green-500 text-white px-3 py-2 rounded-lg shadow-lg font-montserrat font-semibold text-sm animate-pulse">
+        Pide aquí
       </div>
       
       {/* Botón de WhatsApp */}
@@ -28,3 +29,4 @@ const WhatsAppButton = () => {
 };
 
 export default WhatsAppButton;
+
