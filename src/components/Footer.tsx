@@ -74,8 +74,8 @@ const Footer = () => {
                 <span className="text-gray-600">+573113925325</span>
               </li>
               <li className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-organic-green mt-0.5" />
-                <span className="text-gray-600">info@ecofresh.com</span>
+                
+                
               </li>
             </ul>
             <div className="mt-4">
