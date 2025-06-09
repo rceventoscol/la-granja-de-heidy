@@ -1,10 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Leaf, Mail, Phone, Instagram, Facebook, Twitter } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-organic-beige">
+  return <footer className="bg-organic-beige">
       <div className="container-organic py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
@@ -59,27 +56,19 @@ const Footer = () => {
           
           {/* Categories */}
           <div>
-            <h3 className="font-montserrat font-semibold text-lg mb-4">Categorías populares</h3>
+            <h3 className="font-montserrat font-semibold text-lg mb-4">La Granja de Heidy</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/tienda/vegetales" className="text-gray-600 hover:text-organic-green transition-colors">
-                  Vegetales de Fruto
-                </Link>
+                <Link to="/tienda/vegetales" className="text-gray-600 hover:text-organic-green transition-colors">Cra. 38 #48-45</Link>
               </li>
               <li>
-                <Link to="/tienda/frutas-tropicales" className="text-gray-600 hover:text-organic-green transition-colors">
-                  Frutas Tropicales
-                </Link>
+                <Link to="/tienda/frutas-tropicales" className="text-gray-600 hover:text-organic-green transition-colors">Cabecera del llano</Link>
               </li>
               <li>
-                <Link to="/tienda/huevos-lacteos" className="text-gray-600 hover:text-organic-green transition-colors">
-                  Huevos y Lácteos
-                </Link>
+                <Link to="/tienda/huevos-lacteos" className="text-gray-600 hover:text-organic-green transition-colors">Bucaramanga</Link>
               </li>
               <li>
-                <Link to="/tienda/cajas-suscripciones" className="text-gray-600 hover:text-organic-green transition-colors">
-                  Cajas y Suscripciones
-                </Link>
+                <Link to="/tienda/cajas-suscripciones" className="text-gray-600 hover:text-organic-green transition-colors">Santander</Link>
               </li>
             </ul>
           </div>
@@ -90,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-organic-green mt-0.5" />
-                <span className="text-gray-600">+123 456 7890</span>
+                <span className="text-gray-600">+57 311 392 5325</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-organic-green mt-0.5" />
@@ -98,12 +87,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-4">
-              <a 
-                href="https://wa.me/1234567890" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block bg-organic-green text-black px-4 py-2 rounded-md hover:bg-organic-green/80 transition-colors font-montserrat"
-              >
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="inline-block bg-organic-green text-black px-4 py-2 rounded-md hover:bg-organic-green/80 transition-colors font-montserrat">
                 Contactar por WhatsApp
               </a>
             </div>
@@ -116,8 +100,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
