@@ -1,5 +1,7 @@
+
 import { Link } from "react-router-dom";
-import { Leaf, Mail, Phone, Instagram, Facebook, Twitter } from "lucide-react";
+import { Leaf, Mail, Phone, Instagram } from "lucide-react";
+
 const Footer = () => {
   return <footer className="bg-organic-beige">
       <div className="container-organic py-12">
@@ -15,14 +17,8 @@ const Footer = () => {
               promoviendo la agricultura regenerativa y sostenible.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-gray-600 hover:text-organic-green transition-colors">
+              <a href="https://www.instagram.com/lagranjadeheidy" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-organic-green transition-colors">
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-organic-green transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-organic-green transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -79,7 +75,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-organic-green mt-0.5" />
-                <span className="text-gray-600">+57 311 392 5325</span>
+                <span className="text-gray-600">+573113925325</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-organic-green mt-0.5" />
@@ -87,7 +83,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-4">
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="inline-block bg-organic-green text-black px-4 py-2 rounded-md hover:bg-organic-green/80 transition-colors font-montserrat">
+              <a href="https://wa.me/573113925325" target="_blank" rel="noopener noreferrer" className="inline-block bg-organic-green text-black px-4 py-2 rounded-md hover:bg-organic-green/80 transition-colors font-montserrat">
                 Contactar por WhatsApp
               </a>
             </div>
@@ -102,4 +98,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
