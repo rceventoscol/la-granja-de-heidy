@@ -1,7 +1,5 @@
-
 import { Link } from "react-router-dom";
 import { Leaf, Mail, Phone, Instagram } from "lucide-react";
-
 const Footer = () => {
   return <footer className="bg-organic-beige">
       <div className="container-organic py-12">
@@ -33,9 +31,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/tienda" className="text-gray-600 hover:text-organic-green transition-colors">
-                  Tienda
-                </Link>
+                
               </li>
               <li>
                 <Link to="/conocenos" className="text-gray-600 hover:text-organic-green transition-colors">
@@ -98,5 +94,4 @@ const Footer = () => {
       </div>
     </footer>;
 };
-
 export default Footer;
