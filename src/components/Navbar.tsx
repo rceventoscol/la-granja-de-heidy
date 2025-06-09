@@ -34,7 +34,7 @@ const Navbar = () => {
         <span className="bg-organic-green block w-7 h-1 rounded transition-transform"></span>
         <span className="bg-organic-green block w-7 h-1 rounded"></span>
         <span className="bg-organic-green block w-7 h-1 rounded"></span>
-      </span>
+      </button>
 
       <MobileNav isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
     </nav>
