@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
-import { CONOCENOS_SECCIONES, BLOG_SECCIONES } from "@/config/navigation";
+import { CONOCENOS_SECCIONES } from "@/config/navigation";
 import { useNavActive } from "@/hooks/use-nav-active";
 import { Logo } from "./Logo";
 
@@ -12,6 +12,14 @@ interface MobileNavProps {
 
 export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
   const { isPathActive } = useNavActive();
+
+  const scrollToBlog = () => {
+    const blogSection = document.getElementById('blog');
+    if (blogSection) {
+      blogSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    onClose(); // Close mobile menu after clicking
+  };
 
   if (!isOpen) return null;
 
@@ -59,36 +67,12 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
           </div>
 
           <div>
-            <span className="font-montserrat font-semibold text-organic-green flex items-center mb-1">
+            <button
+              onClick={scrollToBlog}
+              className="font-montserrat font-semibold text-organic-green flex items-center mb-1 w-full text-left"
+            >
               📝 Blog
-            </span>
-            <div className="flex flex-col pl-2">
-              <Link
-                to="/blog"
-                className={`py-2 block font-montserrat text-base ${
-                  location.pathname.startsWith("/blog") && location.pathname === "/blog"
-                    ? "text-organic-green font-semibold"
-                    : "text-gray-700"
-                }`}
-                onClick={onClose}
-              >
-                Todas las entradas
-              </Link>
-              {BLOG_SECCIONES.map((sec) => (
-                <Link
-                  to={sec.path}
-                  key={sec.name}
-                  className={`py-2 block font-montserrat text-base ${
-                    location.pathname.startsWith(sec.path)
-                      ? "text-organic-green font-semibold"
-                      : "text-gray-700"
-                  }`}
-                  onClick={onClose}
-                >
-                  {sec.name}
-                </Link>
-              ))}
-            </div>
+            </button>
           </div>
         </div>
       </div>

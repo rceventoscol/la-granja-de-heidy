@@ -155,8 +155,8 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Blog Preview */}
-        <section className="py-16">
+        {/* Blog Preview - Added ID for scroll targeting */}
+        <section id="blog" className="py-16">
           <div className="container-organic">
             <div className="flex justify-between items-center mb-10">
               <h2 className="font-montserrat font-bold text-3xl">Blog</h2>
