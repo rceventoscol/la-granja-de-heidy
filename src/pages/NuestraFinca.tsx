@@ -1,11 +1,8 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-
 const NuestraFinca = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow py-16">
         <div className="container-organic max-w-4xl mx-auto px-4">
@@ -18,11 +15,7 @@ const NuestraFinca = () => {
               regalan huevos 100% orgánicos.
             </p>
 
-            <p className="text-gray-700">
-              Pero eso no es todo. Los vegetales también se cultivan allá, con paciencia, sin químicos y con mucho amor. 
-              ¿Y quién está detrás de todo ese cuidado? La mamá de Heidy —una dura— que se encarga de que cada cosecha 
-              esté llena de vida, sabor y frescura. Literal, su amor se siente en cada hoja de lechuga.
-            </p>
+            <p className="text-gray-700">Pero eso no es todo. Los vegetales también se cultivan allá, con paciencia, sin químicos y con mucho amor. ¿Y quién está detrás de todo ese cuidado? La mamá de Heidy, una dura que se encarga de que cada cosecha esté llena de vida, sabor y frescura. Literal, su amor se siente en cada hoja de lechuga.</p>
 
             <p className="text-gray-700">
               Todo llega fresquito, directo del campo a tu casa, sin vueltas raras ni intermediarios. Para nosotros esto 
@@ -34,8 +27,6 @@ const NuestraFinca = () => {
       </main>
       <Footer />
       <WhatsAppButton />
-    </div>
-  );
+    </div>;
 };
-
 export default NuestraFinca;
