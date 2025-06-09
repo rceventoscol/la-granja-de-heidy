@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Leaf, Award, TrendingUp, Truck } from "lucide-react";
+import { Leaf, Award, TrendingUp, Truck, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -70,6 +70,26 @@ const Index = () => {
         {/* Hero Carousel */}
         <HeroCarousel />
         
+        {/* Call to Action Button */}
+        <section className="py-8 bg-white">
+          <div className="container-organic">
+            <div className="text-center">
+              <a 
+                href="https://wa.me/573113925325?text=¡Hola! Me gustaría hacer un pedido de productos orgánicos frescos." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-organic-green hover:bg-organic-green/90 text-black font-montserrat font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <ShoppingCart className="h-6 w-6" />
+                Pide aquí - WhatsApp
+              </a>
+              <p className="text-gray-600 mt-3 font-lora">
+                Productos frescos directo del campo a tu mesa
+              </p>
+            </div>
+          </div>
+        </section>
+        
         {/* Features Section */}
         <section className="py-16 bg-organic-beige/30">
           <div className="container-organic">
@@ -124,9 +144,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
-        {/* Featured Products */}
-        
         
         {/* Banner */}
         <section className="py-24 bg-organic-green/10 relative overflow-hidden">
