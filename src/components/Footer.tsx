@@ -59,13 +59,13 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-lg mb-4">La Granja de Heidy</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/tienda/vegetales" className="text-gray-600 hover:text-organic-green transition-colors">Cra. 38 #48-45</Link>
+                <Link to="/tienda/vegetales" className="text-gray-600 hover:text-organic-green transition-colors">Cra. 38 #48-45,</Link>
               </li>
               <li>
-                <Link to="/tienda/frutas-tropicales" className="text-gray-600 hover:text-organic-green transition-colors">Cabecera del llano</Link>
+                <Link to="/tienda/frutas-tropicales" className="text-gray-600 hover:text-organic-green transition-colors">Cabecera del llano,</Link>
               </li>
               <li>
-                <Link to="/tienda/huevos-lacteos" className="text-gray-600 hover:text-organic-green transition-colors">Bucaramanga</Link>
+                <Link to="/tienda/huevos-lacteos" className="text-gray-600 hover:text-organic-green transition-colors">Bucaramanga,</Link>
               </li>
               <li>
                 <Link to="/tienda/cajas-suscripciones" className="text-gray-600 hover:text-organic-green transition-colors">Santander</Link>
