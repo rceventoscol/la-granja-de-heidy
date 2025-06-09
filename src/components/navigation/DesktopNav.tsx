@@ -9,7 +9,7 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { useNavActive } from "@/hooks/use-nav-active";
-import { CONOCENOS_SECCIONES, BLOG_SECCIONES, CATALOGO_URL } from "@/config/navigation";
+import { CONOCENOS_SECCIONES, BLOG_SECCIONES } from "@/config/navigation";
 
 export const DesktopNav = () => {
   const { isPathActive } = useNavActive();
@@ -18,18 +18,6 @@ export const DesktopNav = () => {
     <div className="hidden md:flex items-center space-x-4">
       <NavigationMenu>
         <NavigationMenuList>
-          {/* 📄 Catálogo */}
-          <NavigationMenuItem>
-            <a
-              href={CATALOGO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-montserrat text-gray-700 hover:text-organic-green transition-colors px-4 py-2 flex items-center"
-            >
-              📄 Catálogo
-            </a>
-          </NavigationMenuItem>
-
           {/* 🌿 Conócenos */}
           <NavigationMenuItem>
             <NavigationMenuTrigger

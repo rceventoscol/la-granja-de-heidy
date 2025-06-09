@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { CONOCENOS_SECCIONES, BLOG_SECCIONES, CATALOGO_URL } from "@/config/navigation";
+import { CONOCENOS_SECCIONES, BLOG_SECCIONES } from "@/config/navigation";
 import { useNavActive } from "@/hooks/use-nav-active";
 import { Logo } from "./Logo";
 
@@ -23,18 +23,6 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
         <Logo onClick={onClose} />
 
         <div className="flex flex-col space-y-6 mt-8">
-          <div>
-            <a
-              href={CATALOGO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-montserrat font-semibold text-organic-green flex items-center mb-4"
-              onClick={onClose}
-            >
-              📄 Catálogo
-            </a>
-          </div>
-
           <div>
             <span className="font-montserrat font-semibold text-organic-green flex items-center mb-1">
               🌿 Conócenos
