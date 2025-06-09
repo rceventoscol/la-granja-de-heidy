@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { ShoppingCart } from "lucide-react";
 import { CONOCENOS_SECCIONES, BLOG_SECCIONES } from "@/config/navigation";
 import { useNavActive } from "@/hooks/use-nav-active";
 import { Logo } from "./Logo";
@@ -23,6 +24,18 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
         <Logo onClick={onClose} />
 
         <div className="flex flex-col space-y-6 mt-8">
+          {/* Botón Pide aquí para móvil */}
+          <a 
+            href="https://wa.me/573113925325?text=¡Hola! Me gustaría hacer un pedido de productos orgánicos frescos." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-organic-green hover:bg-organic-green/90 text-black font-montserrat font-semibold text-sm px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+            onClick={onClose}
+          >
+            <ShoppingCart className="h-4 w-4" />
+            Pide aquí
+          </a>
+
           <div>
             <span className="font-montserrat font-semibold text-organic-green flex items-center mb-1">
               🌿 Conócenos
